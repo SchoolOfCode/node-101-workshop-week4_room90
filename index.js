@@ -1,3 +1,4 @@
+import chalk from 'chalk';
 import myCollection from "./collection.js";
 
 // console.log(myCollection);
@@ -31,10 +32,12 @@ import myCollection from "./collection.js";
 //Task 2d
 function describeItem(item) {
   console.log(
-    "I have a " +
-      item.name +
+      "I have " +
+      chalk.yellow(item.count) +
+       " " +
+      chalk.cyan(item.name) +
       ". Here is what I like about it: " +
-      item.whatILike
+      chalk.green(item.whatILike)
   );
 }
 
