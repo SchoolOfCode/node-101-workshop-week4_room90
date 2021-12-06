@@ -37,7 +37,7 @@ function describeItem(item) {
        " " +
       chalk.cyan(item.name) +
       ". Here is what I like about it: " +
-      chalk.green(item.whatILike)
+      chalk.green.bgWhite.bold(item.whatILike)
   );
 }
 
