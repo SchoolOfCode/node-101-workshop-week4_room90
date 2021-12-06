@@ -1,20 +1,4 @@
-let myCollection = [
-  {
-    name: "School of Code mug",
-    count: 1,
-    whatILike: "It has my cute pixel character on it!",
-  },
-  {
-    name: "School of Code hat",
-    count: 2,
-    whatILike: "An often overlooked fashion accessory",
-  },
-  {
-    name: "School of Code pillow",
-    count: 1,
-    whatILike: "Eat. Sleep. Code. Repeat :)",
-  },
-];
+import myCollection from "./collection.js";
 
 // console.log(myCollection);
 
@@ -45,7 +29,7 @@ let myCollection = [
 // describeItem(myCollection);
 
 //Task 2d
-function describeItem (item) {
+function describeItem(item) {
   console.log(
     "I have a " +
       item.name +
@@ -54,9 +38,9 @@ function describeItem (item) {
   );
 }
 
-function describeCollection (items){
-  for (let i = 0; i < items.length; i++){
-    describeItem (items[i]);
+function describeCollection(items) {
+  for (let i = 0; i < items.length; i++) {
+    describeItem(items[i]);
   }
 }
 
